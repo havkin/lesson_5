@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="container">
+    <header class="header">
+        <img src="images/logo_100.jpg" alt="logo">
+        <ul class="menu">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+    </header>
+    <hr>
+    <h1>Напишите нам</h1>
+    <form action="">
+        <p>Имя&nbsp;&nbsp;&nbsp;<input class="formTextField" type="text" placeholder="введите Ваше имя" required></p>
+        <p>Email <input class="formTextField" type="email" placeholder="введите Ваш email"></p>
+        <fieldset class="formCheckField">
+            <legend>Ваши увлечения</legend>
+            <label><input type="checkbox">Баня<br></label>
+            <label><input type="checkbox">Рыбалка<br></label>
+            <label><input type="checkbox">Программирование</label>
+        </fieldset>
+        <p>Тема <input class="formTextField" type="text"></p>
+        <p><textarea name="message" class="formTextareaField" cols="50" rows="5"></textarea> </p>
+        <input type="reset" value="Стереть все">
+        <input type="submit">
+    </form>
+    <br>
+    <h2>Наш адрес:</h2>
+    <ul>
+        <li>тел.: 555-225-322</li>
+        <li>г. Нск, ул. Мира, д. 2</li>
+        <li><a href="mailto:raki@ikra.drink">raki@ikra.drink</a></li>
+        <li><b>Работаем круглосуточно</b></li>
+    </ul>
+    <iframe
+        src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae3846a6bce3c53500b0ae3c35e31a6bfd4ac2ac013a9f879bc19c6ae64d17fbd&amp;source=constructor"
+        frameborder="1">
+    </iframe>
+    <hr>
+    <footer class="footer">
+        <p>&copy;&nbsp;Все права защищены</p>
+    </footer>
+
+
+</body>
+
+</html>

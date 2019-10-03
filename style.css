@@ -1,0 +1,234 @@
+/* для всех страниц */
+/* ------------------------------------------------------------------------------- */
+
+/* цвет фона */
+body {
+    background-color: #f8f8f8;
+}
+
+/* стили меню */
+.header {
+    height: 130px;
+    position: relative;
+    background-image: url(images/fon_200.jpg);
+}
+
+.menu {
+    color: blueviolet;
+    list-style: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: 600;
+    position: absolute;
+    right: 0px;
+    top: 30px;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.menu li a {
+    text-decoration: none;
+    line-height: 30px;
+}
+
+.menu li a:hover {
+    color: brown;
+}
+
+.menu li a:active {
+    color: tomato;
+} 
+
+.header img {
+    float: left;
+    margin-left: 30px;
+    margin-top: 15px 
+}
+
+.footer {
+    height: 130px;
+    background: #484343;
+    color: #eaeaea;
+    position: relative;
+}
+
+.footer p {
+    position: absolute;
+    right: 10px;
+    top: 40px;
+}
+
+/* страница "Главная */
+/* ------------------------------------------------------------------------------- */
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.mainPage {
+    text-align: center;
+}
+
+/* Страница «Товар каталога» */
+/* -------------------------------------------------------------------------------- */
+
+/* Заголовки (Краткое описание товара, Характеристики, Подробное описание товара) */
+.itemHeaders {
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #eaeaea;
+    /* clear: both; */
+}
+
+/*  Для краткого описания товара */
+.itemShortDescr {
+    color: #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+}
+
+/* Для подробного описания товара */
+.itemFullDescr {
+    color: #484343;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+/* Для списка характеристик товара */
+.itemFeatures {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: bold;
+    list-style-image: url(images/arr.jpg);
+}
+
+/* отрисовка рамки для изображений без border */
+
+.itemImg {
+    outline: 3px solid rgba(255, 123, 0, 0.425);
+    float: left;
+    margin-right: 50px;
+ 
+}
+
+.itemImg:hover {
+    outline: none;
+}
+
+/* кнопка "Купить" */
+
+.separator{
+    clear: both;
+}
+
+.purchaseBut {
+    width: 100px;
+    height: 30px; 
+    margin: 20px 0px 0px 50px;
+}
+
+.purchaseBut:hover {
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.purchaseBut:active {
+    outline: 3px solid rgba(255, 123, 0, 0.425);
+   
+}
+
+/* оформление таблицы характеристик */
+.featureTab {
+    border: 2px solid black;
+    border-collapse: collapse;
+    width: 400px;
+}
+
+.featureTab td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.featureTab th {
+    height: 50px;
+}
+
+.featureTab tr:nth-child(2) {
+    font-weight: 900;
+    text-align: center;
+}
+
+/* оформление параграфов */
+.itemPage p::first-letter {
+    font-size: 25px;
+    color: darkviolet
+}
+
+/* Страница «Контакты» */
+/* ------------------------------------------------------------------------------ */
+
+/* стили для полей ввода и текста внутри них */
+.formTextField {
+    height: 20px;
+    width:200px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    color: indigo;
+    font-size: 16px;
+}
+
+.formTextField[type="email"]:focus {
+    background-color: bisque;
+    color: darkslategray;
+}
+
+.formTextField[type="text"] {
+    text-transform: capitalize;
+}
+
+.formFieldName {
+    width: 100px;
+}
+
+.formCheckField {
+    width: 250px;
+}
+
+.formTextareaField {
+    color: indigo;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+/* страница "Каталог */
+/* ------------------------------------------------------------------------------ */
+
+.catalogPage {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.catalogPage p{
+    text-align: center;
+}
+
+.catalogPageHeader {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+iframe {
+    width: 100%;
+    height: 374px;
+}
