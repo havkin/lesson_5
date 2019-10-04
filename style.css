@@ -9,7 +9,6 @@ body {
 /* стили меню */
 .header {
     height: 130px;
-    position: relative;
     background-image: url(images/fon_200.jpg);
 }
 
@@ -19,9 +18,8 @@ body {
     font-family: 'Courier New', Courier, monospace;
     font-size: 20px;
     font-weight: 600;
-    position: absolute;
-    right: 0px;
-    top: 30px;
+    float: right;
+    margin-top: 50px 
 }
 
 .menu li {
@@ -52,13 +50,13 @@ body {
     height: 130px;
     background: #484343;
     color: #eaeaea;
-    position: relative;
+    padding-top: 40px;
+    padding-right: 50px;
+    box-sizing: border-box; 
 }
 
 .footer p {
-    position: absolute;
-    right: 10px;
-    top: 40px;
+    float: right;
 }
 
 /* страница "Главная */
@@ -139,6 +137,7 @@ body {
 .purchaseBut:hover {
     cursor: pointer;
     font-weight: bolder;
+    box-shadow: 2px 2px 3px black;
 }
 
 .purchaseBut:active {
